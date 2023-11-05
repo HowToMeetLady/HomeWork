@@ -1,0 +1,47 @@
+body {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(4, 5, 23);
+}
+
+span {
+    font-size: 30px;
+    color: greenyellow;
+    opacity:0;
+}
+.line {
+    background-color: aliceblue;
+    position: absolute;
+    transform: translate(0px, -170px);
+    width: 0px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+
+.button:hover .line{
+    transition:width 5s 1s;
+    width: 1000px;
+}
+
+.button:hover span{
+    transition:opacity 2s 5s;
+    opacity:1;
+}
+
+
+
+
